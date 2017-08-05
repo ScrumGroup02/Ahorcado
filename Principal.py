@@ -1,10 +1,17 @@
 
 import DarIncongnita
 import PedirLetra
+import MeterGuiones
+import ImprimirEspaciado
 
-incognita = DarIncongnita.DarIncognita()
+incognitaSolucion = DarIncongnita.DarIncognita()
+incognitaGuion = ""
 
-print(incognita)
+
+
+
+
+print(incognitaSolucion)
 
 
 print("")
@@ -14,6 +21,16 @@ letra = PedirLetra.PedirLetra()
 print("")
 print("")
 print(letra)
+
+print("")
+print("")
+
+
+incognitaGuion = MeterGuiones.MeterGuiones(incognitaSolucion)
+
+
+ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
+
 
 print("")
 print("")
