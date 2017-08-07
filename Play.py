@@ -15,7 +15,7 @@ def play():
 	incognitaGuion = MeterGuiones.MeterGuiones(incognitaSolucion)
 
 
-	print(incognitaSolucion)
+	#print(incognitaSolucion)
 
 
 	Gano = False
@@ -31,6 +31,7 @@ def play():
 		print("")
 		ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
 		print("")
+		print("Intentos restantes: ", Intentos)
 		print("")
 		letra = PedirLetra.PedirLetra()
 		print("")
@@ -69,7 +70,9 @@ def play():
 		return True
 	elif Perdio:
 		print("Perdiste")
+		print(incognitaSolucion)
 		return False
+		
 
 
 
