@@ -11,5 +11,5 @@ def PedirLetra():
 	a = "aa"
 	while len(a) != 1:
 		a = input("Ingrese Una Letra: ")
-		pass
+		
 	return a.upper()
