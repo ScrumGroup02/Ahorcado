@@ -10,7 +10,7 @@ import Control_LetraEnPalabra
 
 
 
-incognitaSolucion = DarIncongnita.DarIncognita()
+incognitaSolucion = DarIncongnita.DarIncognitaDesdeArchivo()
 incognitaGuion = ""
 incognitaGuion = MeterGuiones.MeterGuiones(incognitaSolucion)
 
@@ -21,19 +21,24 @@ Gano = False
 Perdio = False
 Intentos = 5
 
+
+
+
 while not(Gano) and not(Perdio):
 
 	print("")
 	print("")
-	letra = PedirLetra.PedirLetra().upper()
-
+	ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
+	print("")
+	print("")
+	letra = PedirLetra.PedirLetra()
 	print("")
 	print("")
 
 	
 
 
-	ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
+	
 
 	print("")
 	print("")
