@@ -19,12 +19,13 @@ print(incognitaSolucion)
 
 Gano = False
 Perdio = False
+Intentos = 5
 
 while not(Gano) and not(Perdio):
 
 	print("")
 	print("")
-	letra = PedirLetra.PedirLetra()
+	letra = PedirLetra.PedirLetra().upper()
 
 	print("")
 	print("")
@@ -37,8 +38,11 @@ while not(Gano) and not(Perdio):
 	print("")
 	print("")
 
-
-	incognitaGuion = MeterLetra.MeterLetra(incognitaGuion,letra, Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
+	if Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion):
+		
+		incognitaGuion = MeterLetra.MeterLetra(incognitaGuion,letra, Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
+	else:
+		Intentos = Intentos-1
 
 	print("")
 	print("")
@@ -46,6 +50,9 @@ while not(Gano) and not(Perdio):
 
 	print(Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
 
+
+	if Intentos == 0:
+		Perdio= True
 	if incognitaGuion.count("_")==0:
 		Gano = True
 		pass
