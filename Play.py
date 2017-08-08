@@ -1,12 +1,12 @@
 
 import DarIncongnita
-import PedirLetra
+
 import MeterGuiones
 import ImprimirEspaciado
 import MeterLetra
 import Control_LetraEnPalabra
 import Hangman
-
+import MenuPartida
 
 
 def play():
@@ -56,35 +56,39 @@ def playMatch(Intentos):
 
 		if not Perdio:
 
-			letra = PedirLetra.PedirLetra()
-			print("")
-			print("")
 
+			letraMenu = MenuPartida.MenuPartida()
 			
+			if letraMenu[0]:
+				letra = letraMenu[1]
 
-
-			
-
-			print("")
-			print("")
-
-			if Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion):
+				if Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion):
 				
-				incognitaGuion = MeterLetra.MeterLetra(incognitaGuion,letra, Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
-			else:
-				Intentos = Intentos-1
+					incognitaGuion = MeterLetra.MeterLetra(incognitaGuion,letra, Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
+				else:
+					Intentos = Intentos-1
 
-			print("")
-			print("")
-			ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
+				print("")
+				print("")
+				ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
 
-			print(Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
+				print(Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
 
 
 			
-			if incognitaGuion.count("_")==0:
-				Gano = True
-				pass
+				if incognitaGuion.count("_")==0:
+					Gano = True
+					
+
+
+
+			else:
+				Perdio=True
+
+			
+			
+
+			
 
 
 
