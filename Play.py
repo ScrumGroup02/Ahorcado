@@ -8,6 +8,8 @@ import Control_LetraEnPalabra
 import Hangman
 import MenuPartida
 
+import Limpiar
+
 
 def play():
 
@@ -42,6 +44,8 @@ def playMatch(Intentos):
 
 
 	while not(Gano) and not(Perdio):
+
+		Limpiar.Limpiar()
 
 		print("")
 		print("")
