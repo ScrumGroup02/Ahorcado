@@ -31,6 +31,10 @@ def MenuPartida():
 		return[True, letra]
 
 	elif (opcion==2):
+		print("------------------------------------------")
+		print("-      SOS un FRACASADO-----Niño RATA    -")
+		print("------------------------------------------")
+
 		return[False]
 
 
