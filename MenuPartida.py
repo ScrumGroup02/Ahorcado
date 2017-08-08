@@ -6,7 +6,7 @@
 # //por ahora esa funcion solo imprima "diciendo letra" Después se la va reemplazar por la función correspondiente.
 # Si se elige Rendirse, que ejecute otra funcion Rendirse() 
 # //por ahora esa funcion solo imprima "rindiendose" Después se la va reemplazar por la función correspondiente.
-
+import PedirLetra
 
 def imprimir():
 	print("Elegir opción")
@@ -27,10 +27,11 @@ def MenuPartida():
 	pass
 
 	if (opcion==1):
-		#Pedir letra 
+		letra = PedirLetra.PedirLetra()
+		return[True, letra]
 
 	elif (opcion==2):
-		#Rendirse
+		return[False]
 
 
 	print("...")
