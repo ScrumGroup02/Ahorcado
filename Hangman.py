@@ -1,12 +1,11 @@
 # open(nombre,modo)
 #----------------------------------------------------
-import os
-import ipdb
+
 #recordar hacer en la consola de CMD "pip install ipdb"
 #----------------------------------
-def hangman(Intentos)
+def hangman(Intentos):
 	
-	if Intentos = 5:
+	if Intentos == 5:
 		print("______ ")
 		print("|  ")
 		print("|  ")
@@ -15,7 +14,7 @@ def hangman(Intentos)
 		print("|")
 		print("|") 
 		print("____________________'esto.es.un.piso'")
-	elif Intentos = 4
+	elif Intentos == 4:
 		print("______ ")
 		print("|  |")
 		print("|  ")
@@ -24,7 +23,7 @@ def hangman(Intentos)
 		print("|")
 		print("|") 
 		print("____________________'esto.es.un.piso'")
-	elif Intentos = 3
+	elif Intentos == 3:
 		print("______ ")
 		print("|  |")
 		print("|  0")
@@ -33,7 +32,7 @@ def hangman(Intentos)
 		print("|")
 		print("|") 
 		print("____________________'esto.es.un.piso'")
-	elif Intentos = 2
+	elif Intentos == 2:
 		print("______ ")
 		print("|  |")
 		print("|  0")
@@ -42,7 +41,7 @@ def hangman(Intentos)
 		print("|")
 		print("|") 
 		print("____________________'esto.es.un.piso'")
-	elif Intentos = 1
+	elif Intentos == 1:
 		print("______ ")
 		print("|  |")
 		print("|  0")
@@ -51,7 +50,7 @@ def hangman(Intentos)
 		print("|")
 		print("|") 
 		print("____________________'esto.es.un.piso'")
-	elif Intentos = 0
+	elif Intentos == 0:
 		print("______ ")
 		print("|  |")
 		print("|  0")
@@ -60,4 +59,4 @@ def hangman(Intentos)
 		print("|")
 		print("|") 
 		print("____________________'esto.es.un.piso'")
-input(" ")
+
