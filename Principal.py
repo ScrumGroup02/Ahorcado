@@ -1,4 +1,4 @@
+import MenuPrincipal
 
-import Play
+MenuPrincipal.MenuPrincipal()
 
-Play.play()
