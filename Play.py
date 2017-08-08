@@ -93,10 +93,19 @@ def playMatch(Intentos):
 
 
 	if Gano:
-		print("Ganaste")
+		print("╔══════════════════════════════════════════════════════════╗")
+		print("║                                                          ║")
+		print("║       Ganaste---Por Fin te salio algo en la vida :P      ║")
+		print("║                                                          ║")
+		print("╚══════════════════════════════════════════════════════════╝")
+
+
 		return [True,Intentos]
 	elif Perdio:
-		print("Perdiste")
+		print("-------------------------------------------------------")
+		print("-     Perdiste y si no jugas otra vez sos una NENA    -")
+		print("-------------------------------------------------------")
+
 		print(incognitaSolucion)
 		return [False,0]
 		
