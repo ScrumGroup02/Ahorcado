@@ -11,6 +11,21 @@ import Hangman
 
 def play():
 
+	jugando = True
+	Intentos = 5
+	jugando= [True,Intentos]
+
+	while jugando[0]:
+		
+		jugando = playMatch(jugando[1])
+		
+	
+
+	pass
+
+
+def playMatch(Intentos):
+
 	incognitaSolucion = DarIncongnita.DarIncognitaDesdeArchivo()
 	incognitaGuion = ""
 	incognitaGuion = MeterGuiones.MeterGuiones(incognitaSolucion)
@@ -21,7 +36,7 @@ def play():
 
 	Gano = False
 	Perdio = False
-	Intentos = 5
+	Intentos = Intentos
 
 
 
@@ -75,11 +90,11 @@ def play():
 
 	if Gano:
 		print("Ganaste")
-		return True
+		return [True,Intentos]
 	elif Perdio:
 		print("Perdiste")
 		print(incognitaSolucion)
-		return False
+		return [False,0]
 		
 
 
