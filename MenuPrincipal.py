@@ -10,18 +10,32 @@
 # Si se eligió uno, que avance a una función Play() //Por ahora no haga nada la funcion esa o solo imprima "jugando"..
 # Si se eligió salir, que se termine la ejecución del programa.
 import Play
-
+import Limpiar
+import time 
 
 def imprimir_menu():
 
-	print("--------------------------------")
-	print("-          1-Jugar             -")
-	print("-          2-Salir             -")
-	print("--------------------------------")
+	print("╔══════════════════════════════╗")
+	print("║          1-Jugar             ║")
+	print("║          2-Salir             ║")
+	print("╚══════════════════════════════╝")
 	
 
 def despedir():
 	print("Hasta luego. . .")
+	Limpiar.Limpiar()
+
+	for i in range(3):
+		print(" ( ¨ ¨ )┐")
+		print("└(  O  ) ")
+		time.sleep(1)
+		Limpiar.Limpiar()
+		print(" ( ¨ ¨ )┘")
+		print("┌( \=/ ) ")
+		time.sleep(1)
+		Limpiar.Limpiar()
+
+	input("")
 
 
 def MenuPrincipal():
