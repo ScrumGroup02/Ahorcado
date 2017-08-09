@@ -1,5 +1,5 @@
 def ImprimirEspaciado(palabra): 	
- 	palabraEspaciada = " "
+ 	palabraEspaciada = "\t"
 
 
  	for x in palabra:
