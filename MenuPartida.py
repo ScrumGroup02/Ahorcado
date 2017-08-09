@@ -15,6 +15,11 @@ def imprimir():
 	print("1-Decir Letra")
 	print("2-Rendirse")
 
+def humillar():
+	print("------------------------------------------")
+	print("-      SOS un FRACASADO-----Niño RATA    -")
+	print("------------------------------------------")
+
 
 def MenuPartida():
 
@@ -26,17 +31,15 @@ def MenuPartida():
 	while (opcion !=1 and opcion != 2):
 		imprimir()
 		opcion=int(input(""))
-	pass
+	
 
 	if (opcion==1):
 		letra = PedirLetra.PedirLetra()
 		return[True, letra]
 
-	elif (opcion==2):
-		print("------------------------------------------")
-		print("-      SOS un FRACASADO-----Niño RATA    -")
-		print("------------------------------------------")
 
+	elif (opcion==2):
+		humillar()
 		return[False]
 
 
