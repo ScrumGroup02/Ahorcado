@@ -14,19 +14,19 @@ import Play
 
 def MenuPrincipal():
 
-
-	print("Jugar")
-	print("Salir")
-
-	print("Precione 1 para jugar - 2 para salir")
+	print("--------------------------------")
+	print("-          1-Jugar             -")
+	print("-          2-Salir             -")
+	print("--------------------------------")
+	
 	opcion=int(input(""))
 
 	while (opcion !=1 and opcion != 2):
 		print("Por Favor eliga opción 1 o 2")
-		print("Precione 1 para jugar - 2 para salir")
+		
 		opcion=int(input(""))
 	pass
-
+	
 	if (opcion==1):
 		Play.play()
 
