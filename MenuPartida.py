@@ -9,6 +9,8 @@
 import PedirLetra
 
 def imprimir():
+	print("")
+	print("")
 	print("Elegir opción")
 	print("1-Decir Letra")
 	print("2-Rendirse")
