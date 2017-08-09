@@ -12,27 +12,38 @@
 import Play
 
 
-def MenuPrincipal():
+def imprimir_menu():
 
 	print("--------------------------------")
 	print("-          1-Jugar             -")
 	print("-          2-Salir             -")
 	print("--------------------------------")
 	
+
+def despedir():
+	print("Hasta luego. . .")
+
+
+def MenuPrincipal():
+
+	imprimir_menu()
+
 	opcion=int(input(""))
+
 
 	while (opcion !=1 and opcion != 2):
 		print("Por Favor eliga opción 1 o 2")
 		
 		opcion=int(input(""))
-	pass
+	
 	
 	if (opcion==1):
 		Play.play()
 
 	elif (opcion==2):
-		print("Hasta luego. . .")
+		despedir()
+		
 
-	print("...")
+
 
 
