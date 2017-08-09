@@ -33,8 +33,6 @@ def playMatch(Intentos):
 	incognitaGuion = MeterGuiones.MeterGuiones(incognitaSolucion)
 
 
-	#print(incognitaSolucion)
-
 
 	Gano = False
 	Perdio = False
@@ -51,7 +49,7 @@ def playMatch(Intentos):
 		print("")
 		
 		Hangman.hangman(Intentos)
-		print("Intentos restantes: ", Intentos)
+		
 		print("")
 		print("")
 		ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)

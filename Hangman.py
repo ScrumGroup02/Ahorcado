@@ -14,6 +14,7 @@ def hangman(Intentos):
 		print("|")
 		print("|") 
 		print("____________________")
+		print("Intentos restantes: ", Intentos)
 	elif Intentos == 4:
 		print("______ ")
 		print("|  |")
@@ -23,6 +24,7 @@ def hangman(Intentos):
 		print("|")
 		print("|") 
 		print("____________________")
+		print("Intentos restantes: ", Intentos)
 	elif Intentos == 3:
 		print("______ ")
 		print("|  |")
@@ -32,6 +34,7 @@ def hangman(Intentos):
 		print("|")
 		print("|") 
 		print("____________________")
+		print("Intentos restantes: ", Intentos)
 	elif Intentos == 2:
 		print("______ ")
 		print("|  |")
@@ -41,6 +44,7 @@ def hangman(Intentos):
 		print("|")
 		print("|") 
 		print("____________________")
+		print("Intentos restantes: ", Intentos)
 	elif Intentos == 1:
 		print("______ ")
 		print("|  |")
@@ -50,6 +54,7 @@ def hangman(Intentos):
 		print("|")
 		print("|") 
 		print("____________________")
+		print("Intentos restantes: ", Intentos)
 	elif Intentos == 0:
 		print("______ ")
 		print("|  |")
@@ -59,4 +64,5 @@ def hangman(Intentos):
 		print("|")
 		print("|") 
 		print("____________________")
+		print("Intentos restantes: ", Intentos)
 
