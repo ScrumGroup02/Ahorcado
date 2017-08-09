@@ -13,7 +13,7 @@ def hangman(Intentos):
 		print("| ")
 		print("|")
 		print("|") 
-		print("____________________'esto.es.un.piso'")
+		print("____________________")
 	elif Intentos == 4:
 		print("______ ")
 		print("|  |")
@@ -22,7 +22,7 @@ def hangman(Intentos):
 		print("| ")
 		print("|")
 		print("|") 
-		print("____________________'esto.es.un.piso'")
+		print("____________________")
 	elif Intentos == 3:
 		print("______ ")
 		print("|  |")
@@ -31,7 +31,7 @@ def hangman(Intentos):
 		print("| ")
 		print("|")
 		print("|") 
-		print("____________________'esto.es.un.piso'")
+		print("____________________")
 	elif Intentos == 2:
 		print("______ ")
 		print("|  |")
@@ -40,7 +40,7 @@ def hangman(Intentos):
 		print("| ")
 		print("|")
 		print("|") 
-		print("____________________'esto.es.un.piso'")
+		print("____________________")
 	elif Intentos == 1:
 		print("______ ")
 		print("|  |")
@@ -49,7 +49,7 @@ def hangman(Intentos):
 		print("| ")
 		print("|")
 		print("|") 
-		print("____________________'esto.es.un.piso'")
+		print("____________________")
 	elif Intentos == 0:
 		print("______ ")
 		print("|  |")
@@ -58,5 +58,5 @@ def hangman(Intentos):
 		print("| / \     YOU DIE!!!")
 		print("|")
 		print("|") 
-		print("____________________'esto.es.un.piso'")
+		print("____________________")
 
