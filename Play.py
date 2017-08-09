@@ -49,11 +49,14 @@ def playMatch(Intentos):
 
 		print("")
 		print("")
-		ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
-		print("")
+		
 		Hangman.hangman(Intentos)
 		print("Intentos restantes: ", Intentos)
 		print("")
+		print("")
+		ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
+		
+		
 
 		if Intentos == 0:
 				Perdio= True
