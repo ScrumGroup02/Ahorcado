@@ -105,7 +105,7 @@ def playMatch(Intentos):
 		print("║       Ganaste---Por Fin te salio algo en la vida :P      ║")
 		print("║                                                          ║")
 		print("╚══════════════════════════════════════════════════════════╝")
-
+		input()
 
 		return [True,Intentos]
 	elif Perdio:
