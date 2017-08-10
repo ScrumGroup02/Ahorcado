@@ -25,17 +25,18 @@ def despedir():
 	print("Hasta luego. . .")
 	Limpiar.Limpiar()
 
-	for i in range(3):
+	for i in range(5):
 		print(" ( ¨ ¨ )┐")
 		print("└(  O  ) ")
-		time.sleep(1)
+		time.sleep(0.3)
 		Limpiar.Limpiar()
 		print(" ( ¨ ¨ )┘")
 		print("┌( \=/ ) ")
-		time.sleep(1)
+		time.sleep(0.3)
 		Limpiar.Limpiar()
 
-	input("")
+
+
 
 
 def MenuPrincipal():
@@ -56,9 +57,12 @@ def MenuPrincipal():
 	
 	if (opcion=='1'):
 		Play.play()
+		time.sleep(3)
+		return True
 
 	elif (opcion=='2'):
 		despedir()
+		return False
 		
 
 
