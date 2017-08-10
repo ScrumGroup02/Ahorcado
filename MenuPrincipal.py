@@ -28,19 +28,19 @@ def MenuPrincipal():
 
 	imprimir_menu()
 
-	opcion=int(input(""))
+	opcion=input("")
 
 
-	while (opcion !=1 and opcion != 2):
+	while (opcion !='1' and opcion != '2'):
 		print("Por Favor eliga opción 1 o 2")
 		
-		opcion=int(input(""))
+		opcion=input("")
 	
 	
-	if (opcion==1):
+	if (opcion=='1'):
 		Play.play()
 
-	elif (opcion==2):
+	elif (opcion=='2'):
 		despedir()
 		
 

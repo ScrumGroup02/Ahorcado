@@ -26,19 +26,19 @@ def MenuPartida():
 	imprimir()
 
 	
-	opcion=int(input(""))
+	opcion=input("")
 
-	while (opcion !=1 and opcion != 2):
+	while (opcion !='1' and opcion != '2'):
 		imprimir()
-		opcion=int(input(""))
+		opcion=input("")
 	
 
-	if (opcion==1):
+	if (opcion=='1'):
 		letra = PedirLetra.PedirLetra()
 		return[True, letra]
 
 
-	elif (opcion==2):
+	elif (opcion=='2'):
 		humillar()
 		return[False]
 
