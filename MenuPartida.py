@@ -7,9 +7,9 @@
 # Si se elige Rendirse, que ejecute otra funcion Rendirse() 
 # //por ahora esa funcion solo imprima "rindiendose" Después se la va reemplazar por la función correspondiente.
 import PedirLetra
+import Limpiar
 
 def imprimir():
-	print("")
 	print("")
 	print("Elegir opción")
 	print("1-Decir Letra")
@@ -32,6 +32,7 @@ def MenuPartida():
 		imprimir()
 		opcion=input("")
 	
+	Limpiar.Limpiar()
 
 	if (opcion=='1'):
 		letra = PedirLetra.PedirLetra()

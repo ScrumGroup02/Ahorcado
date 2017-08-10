@@ -26,6 +26,8 @@ def play():
 	pass
 
 
+
+
 def playMatch(Intentos):
 
 	incognitaSolucion = DarIncongnita.DarIncognitaDesdeArchivo()
@@ -44,13 +46,9 @@ def playMatch(Intentos):
 	while not(Gano) and not(Perdio):
 
 		Limpiar.Limpiar()
-
-		print("")
-		print("")
 		
 		Hangman.hangman(Intentos)
 		
-		print("")
 		print("")
 		ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
 		

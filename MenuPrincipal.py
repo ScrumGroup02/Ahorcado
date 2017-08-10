@@ -50,6 +50,9 @@ def MenuPrincipal():
 		
 		opcion=input("")
 	
+
+	Limpiar.Limpiar()
+	
 	
 	if (opcion=='1'):
 		Play.play()
