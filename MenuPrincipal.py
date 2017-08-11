@@ -12,14 +12,15 @@
 import Play
 import Limpiar
 import time 
-
+import os
 def imprimir_menu():
 
 	print("╔══════════════════════════════╗")
 	print("║          1-Jugar             ║")
 	print("║          2-Salir             ║")
 	print("╚══════════════════════════════╝")
-	
+	if(os.name=="nt"):
+		os.system('color 3')
 
 def despedir():
 	print("╔══════════════════╗")
