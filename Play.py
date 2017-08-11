@@ -7,7 +7,7 @@ import MeterLetra
 import Control_LetraEnPalabra
 import Hangman
 import MenuPartida
-
+import time
 import Limpiar
 
 
@@ -96,22 +96,41 @@ def playMatch(Intentos):
 
 
 	if Gano:
-		print("╔══════════════════════════════════════════════════════════╗")
-		print("║                                                          ║")
-		print("║       Ganaste---Por Fin te salio algo en la vida :P      ║")
-		print("║                                                          ║")
-		print("╚══════════════════════════════════════════════════════════╝")
+
+		mensaje_gano()
 		input()
 
 		return [True,Intentos]
 	elif Perdio:
-		print("-------------------------------------------------------")
-		print("-     Perdiste y si no jugas otra vez sos una NENA    -")
-		print("-------------------------------------------------------")
+		mensaje_predio2()
 
-		print(incognitaSolucion)
+		print("La respuesta FUE: ",incognitaSolucion)
 		return [False,0]
 		
 
 
 
+def mensaje_gano():
+	print("╔══════════════════════════════════════════════════════════╗")
+	print("║                                                          ║")
+	print("║       ===>Por Fin te salio algo en la vida :P <===       ║")
+	print("║                                                          ║")
+	print("╚══════════════════════════════════════════════════════════╝")
+
+
+def mensaje_predio():
+	print("-------------------------------------------------------")
+	print("-     Perdiste y si no jugas otra vez sos un ...      -")
+	print("-------------------------------------------------------")
+def mensaje_predio2():
+	for i in range(3):
+		print("-------------------------------------------------------")
+		print("-     Perdiste y si no jugas otra vez sos un ...      -")
+		print("-------------------------------------------------------")
+		time.sleep(0.9)
+		Limpiar.Limpiar()
+		print("")
+		print("-     Perdiste y si no jugas otra vez sos un ...      -")
+		
+		time.sleep(0.9)
+		Limpiar.Limpiar()
