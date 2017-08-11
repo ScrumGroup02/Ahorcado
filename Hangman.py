@@ -3,7 +3,7 @@
 
 #recordar hacer en la consola de CMD "pip install ipdb"
 #----------------------------------
-def hangman(Intentos):
+def hangman2(Intentos):
 	
 	if Intentos == 5:
 		print("(̅_̅_̅(̅_̅_̅_̅_̅_̅_̅_̅̅_̅_̅̅_̅_̅̅_̅_̅̅_̅_̅̅_̅_̅̅()")
@@ -108,3 +108,65 @@ def hangman(Intentos):
 		print("██████████████████████████")
 		print("Intentos restantes: ", Intentos)
 
+def hangman(Intentos):
+	
+	if Intentos == 5:
+		print("______ ")
+		print("|  ")
+		print("|  ")
+		print("|  ")
+		print("| ")
+		print("|")
+		print("|") 
+		print("____________________'esto.es.un.piso'")
+		print("Intentos restantes: ", Intentos)
+	elif Intentos == 4:
+		print("______ ")
+		print("|  |")
+		print("|  ")
+		print("|  ")
+		print("| ")
+		print("|")
+		print("|") 
+		print("____________________'esto.es.un.piso'")
+		print("Intentos restantes: ", Intentos)
+	elif Intentos == 3:
+		print("______ ")
+		print("|  |")
+		print("|  0")
+		print("|  ")
+		print("| ")
+		print("|")
+		print("|") 
+		print("____________________'esto.es.un.piso'")
+		print("Intentos restantes: ", Intentos)
+	elif Intentos == 2:
+		print("______ ")
+		print("|  |")
+		print("|  0")
+		print("|  | ")
+		print("| ")
+		print("|")
+		print("|") 
+		print("____________________'esto.es.un.piso'")
+		print("Intentos restantes: ", Intentos)
+	elif Intentos == 1:
+		print("______ ")
+		print("|  |")
+		print("|  0")
+		print("| /|\ ")
+		print("| ")
+		print("|")
+		print("|") 
+		print("____________________'esto.es.un.piso'")
+		print("Intentos restantes: ", Intentos)
+	elif Intentos == 0:
+		print("______ ")
+		print("|  |")
+		print("|  0")
+		print("| /|\ ")
+		print("| / \     YOU DIE!!!")
+		print("|")
+		print("|") 
+		print("____________________'esto.es.un.piso'")
+		print("Intentos restantes: ", Intentos)
