@@ -19,6 +19,12 @@ def humillar():
 	print("------------------------------------------")
 	print("-      SOS un FRACASADO-----Niño RATA    -")
 	print("------------------------------------------")
+	print("\tooooo")
+	print("\tooooo")
+	print("\tooooo")
+	print("\t║ ║")
+	print("\t╚ ╝")
+
 
 
 def MenuPartida():
