@@ -12,17 +12,28 @@
 import Play
 import Limpiar
 import time 
-
+import os
 def imprimir_menu():
 
 	print("╔══════════════════════════════╗")
 	print("║          1-Jugar             ║")
 	print("║          2-Salir             ║")
 	print("╚══════════════════════════════╝")
-	
+	if(os.name=="nt"):
+		os.system('color 3')
 
 def despedir():
-	print("Hasta luego. . .")
+	print("╔══════════════════╗")
+	print("║  Hasta luego. . .║")
+	print("╚══════════════════╝")
+ 
+
+	print("  ╔ ╗")
+	print("  ║║║")
+	print("ooooo")
+	print("ooooo")
+	print("ooooo")
+	time.sleep(0.8)
 	Limpiar.Limpiar()
 
 	for i in range(5):
@@ -47,7 +58,7 @@ def MenuPrincipal():
 
 
 	while (opcion !='1' and opcion != '2'):
-		print("Por Favor eliga opción 1 o 2")
+		print("==>Por Favor eliga opción 1 o 2<==")
 		
 		opcion=input("")
 	
