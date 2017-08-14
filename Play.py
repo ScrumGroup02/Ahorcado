@@ -84,7 +84,8 @@ def playMatch(Intentos):
 			
 			
 
-			
+	time.sleep(1)
+
 
 
 
@@ -109,6 +110,7 @@ def mensaje_gano():
 	print("║       ===>Por Fin te salio algo en la vida :P <===       ║")
 	print("║                                                          ║")
 	print("╚══════════════════════════════════════════════════════════╝")
+
 
 
 def mensaje_predio():
