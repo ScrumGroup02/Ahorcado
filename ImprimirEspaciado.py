@@ -5,4 +5,4 @@ def ImprimirEspaciado(palabra):
  	for x in palabra:
  		palabraEspaciada = palabraEspaciada + x + " "
 
- 	print(palabraEspaciada)
+ 	return palabraEspaciada

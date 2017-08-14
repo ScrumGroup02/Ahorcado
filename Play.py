@@ -47,12 +47,9 @@ def playMatch(Intentos):
 
 		Limpiar.Limpiar()
 		
-		Hangman.hangman(Intentos)
+		Hangman.hangman(Intentos, incognitaGuion)
 		
-		print("")
-		ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
-		
-		
+				
 
 		if Intentos == 0:
 				Perdio= True
@@ -72,11 +69,7 @@ def playMatch(Intentos):
 					Intentos = Intentos-1
 
 				print("")
-				print("")
-				ImprimirEspaciado.ImprimirEspaciado(incognitaGuion)
-
-				print(Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
-
+				
 
 			
 				if incognitaGuion.count("_")==0:
