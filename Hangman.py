@@ -1,8 +1,5 @@
-# open(nombre,modo)
-#----------------------------------------------------
 
-#recordar hacer en la consola de CMD "pip install ipdb"
-#----------------------------------
+
 import ImprimirEspaciado
 
 

@@ -1,6 +1,4 @@
-
 import DarIncongnita
-
 import MeterGuiones
 import ImprimirEspaciado
 import MeterLetra
@@ -22,11 +20,6 @@ def play():
 		jugando = playMatch(jugando[1])
 		
 	
-
-	pass
-
-
-
 
 def playMatch(Intentos):
 
