@@ -14,16 +14,17 @@ def play():
 	jugando = True
 	Intentos = 5
 	jugando= [True,Intentos]
-
+	listapalabras = DarIncongnita.DarIncognitaDesdeArchivo()#Hacer desde otra funcion para no llamar la lista del archivo cada vez que se llame esta funcion
 	while jugando[0]:
 		
-		jugando = playMatch(jugando[1])
+		jugando,listapalabras = playMatch(jugando[1],listapalabras)
 		
 	
 
-def playMatch(Intentos):
+def playMatch(Intentos,listapalabras):
 
-	incognitaSolucion = DarIncongnita.DarIncognitaDesdeArchivo()
+	#listapalabras = DarIncongnita.DarIncognitaDesdeArchivo()#Hacer desde otra funcion para no llamar la lista del archivo cada vez que se llame esta funcion
+	incognitaSolucion,listapalabras = DarIncongnita.SeleccionPalabra(listapalabras)
 	incognitaGuion = ""
 	incognitaGuion = MeterGuiones.MeterGuiones(incognitaSolucion)
 
@@ -32,8 +33,6 @@ def playMatch(Intentos):
 	Gano = False
 	Perdio = False
 	Intentos = Intentos
-
-
 
 
 	while not(Gano) and not(Perdio):
@@ -87,12 +86,12 @@ def playMatch(Intentos):
 		mensaje_gano()
 		input()
 
-		return [True,Intentos]
+		return [True,Intentos],listapalabras
 	elif Perdio:
 		mensaje_predio2()
 
 		print("La respuesta FUE: ",incognitaSolucion)
-		return [False,0]
+		return [False,0],listapalabras
 		
 
 
