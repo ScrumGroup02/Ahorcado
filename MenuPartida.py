@@ -1,8 +1,17 @@
 
 import PedirLetra
 import Limpiar
+import DarIncongnita
 
-def imprimir():
+def imprimir(listapala):
+	# print("")
+	# print("╔═══════Palabras Acertadas═══════╗")
+	# print("║",listapala,"                ║")
+	# print("╚════════════════════════════════╝")
+	print("")
+	print("═══════Palabras Acertadas══════════════════════════════════════════")
+	print(listapala)
+	print("═══════════════════════════════════════════════════════════════════")
 	print("")
 	print("Elegir opción")
 	print("1-Decir Letra")
@@ -20,15 +29,15 @@ def humillar():
 
 
 
-def MenuPartida():
+def MenuPartida(palalist):
 
-	imprimir()
+	imprimir(palalist)
 
 	
 	opcion=input("")
 
 	while (opcion !='1' and opcion != '2'):
-		imprimir()
+		imprimir(palalist)
 		opcion=input("")
 	
 	Limpiar.Limpiar()
