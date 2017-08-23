@@ -29,11 +29,11 @@ def DarIncognitaDesdeArchivo():#No es eficiente, utilizar metodo readlines.
 
 	#palabras=archivo.readlines()
 
-	return palabras
+	return palabras#Lista de palabras creada desde archivo de palabras.
 
 
-def SeleccionPalabra(palabras):
+def SeleccionPalabra(palabras):#Sortea una palabra y a la vez la saca de la lista de sorteo .
 
-	palabra=random.choice(palabras)
+	palabra=random.choice(palabras)#Elige una palabra de la lista creada anteriormente.
 	palabras.remove(palabra)
 	return palabra,palabras
