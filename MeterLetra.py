@@ -13,6 +13,4 @@ def MeterLetra(palabraConGuion, letra, listaPosiciones):
 			guionesreemplazados = guionesreemplazados + palabraConGuion[i]
 
 
-
-
 	return guionesreemplazados
