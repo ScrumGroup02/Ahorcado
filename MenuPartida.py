@@ -40,7 +40,7 @@ def MenuPartida(palalist):
 		imprimir(palalist)
 		opcion=input("")
 	
-	Limpiar.Limpiar()
+	print()
 
 	if (opcion=='1'):
 		letra = PedirLetra.PedirLetra()
