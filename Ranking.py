@@ -249,7 +249,13 @@ def ImprimirRanking():
 	print()
 
 	for x in listaRanking:
-		print(a,"- ",x[0],"\t\t",x[1])
+		
+		if len(x[0])>=6:
+			print(a,"\t",x[0],"\t\t",x[1])
+		else:
+			print(a,"\t",x[0],"\t\t\t",x[1])
+
+
 		a = a+1
 
 	print("______________________________")
