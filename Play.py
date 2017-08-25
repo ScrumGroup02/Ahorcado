@@ -9,6 +9,8 @@ import time
 import Limpiar
 
 
+
+
 def play():
 
 	jugando = True
@@ -19,13 +21,21 @@ def play():
 	listapalabras = DarIncongnita.DarIncognitaDesdeArchivo()#Hacer desde otra funcion para no llamar la lista del archivo cada vez que se llame esta funcion
 	palaacer=[]#Crea una lista de palabras acertadas
 
+	puntuacion = -1
+
 	while jugando[0]:
-		
-		jugando,listapalabras = playMatch(jugando[1],listapalabras,palaacer)
+		puntuacion = puntuacion+1
+		jugando,listapalabras,palaacer = playMatch(jugando[1],listapalabras,palaacer,puntuacion)
+
+	
+	#aca va venir el tema de guardar la puntuacion
+		#pedir nombre y eso.
+
+
 		
 	
 
-def playMatch(Intentos,listapalabras,palaacer):#Cada playmach es una palabra
+def playMatch(Intentos,listapalabras,palaacer,puntos):#Cada playmach es una palabra
 
 	incognitaSolucion,listapalabras = DarIncongnita.SeleccionPalabra(listapalabras)
 	incognitaGuion = ""
@@ -39,6 +49,7 @@ def playMatch(Intentos,listapalabras,palaacer):#Cada playmach es una palabra
 
 		Limpiar.Limpiar()
 		
+		print("puntos: ", puntos) 
 		Hangman.hangman(Intentos, incognitaGuion)
 		
 				
@@ -81,18 +92,29 @@ def playMatch(Intentos,listapalabras,palaacer):#Cada playmach es una palabra
 
 
 
+
+
+
 	if Gano:
 		palaacer.append(incognitaSolucion)
 		mensaje_gano()
 		input()
 
-		return [True,Intentos],listapalabras
+		return [True,Intentos],listapalabras,palaacer
+
 	elif Perdio:
 		mensaje_predio2()
 
 		print("La respuesta FUE: ",incognitaSolucion)
-		return [False,0],listapalabras
+		return [False,0],listapalabras, palaacer
 		
+
+
+
+
+
+
+
 
 
 
@@ -105,10 +127,15 @@ def mensaje_gano():
 
 
 
+
+
+
+
 def mensaje_predio():
 	print("-------------------------------------------------------")
 	print("-     Perdiste y si no jugas otra vez sos un ...      -")
 	print("-------------------------------------------------------")
+
 def mensaje_predio2():
 	for i in range(3):
 		print("-------------------------------------------------------")
