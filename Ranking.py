@@ -23,7 +23,7 @@ import os #para borrar archivo
 
 #Al verificar Nombre
 	#que no contenga signo $   
-	#maxima longitud 9 caracteres
+	#maxima longitud 9 caracteres, minima 4
 
 #___________________________________________________________________
 
@@ -74,10 +74,19 @@ def pedir_ingreso_nombre():
 
 
 #__________________________________________________
-#!!!!!!!!!!!!!!!!!!!!!!! Falta Hacer
+
 #funcion para verificar que el nombre cumple los requisitos
 def verificar_nombre(nombre):
-	verificado = True
+	verificado = False
+
+
+	nomLongitud = len(nombre)
+
+	if nomLongitud > 4:
+		if nomLongitud < 10:
+			if nombre.isalnum():
+				verificado True
+
 
 	#asegurarse que no tenga el simbolo $
 	#max long 9
