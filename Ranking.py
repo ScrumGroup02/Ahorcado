@@ -193,19 +193,24 @@ def meter_nueva_puntuacion_a_lista(tupla,lista_en_donde_ingresar):
 	
 	
 	a=0
-	print(lista_en_donde_ingresar)
+	entro_al_ranking = False
 	for elem in lista_en_donde_ingresar:
 		if elem[1]<tupla[1]:
 			#si se quiere que
 			#tenga que pasar la puntuacion
 			#del ultimo en el ranking
 			#ingresar en esta parte la tupla
-			#lista_en_donde_ingresar.insert(a,tupla)	
+			lista_en_donde_ingresar.insert(a,tupla)	
+			entro_al_ranking = True
 			break
 		a=a+1
 
-	lista_en_donde_ingresar.insert(a,tupla)
-	print(lista_en_donde_ingresar)
+	#lista_en_donde_ingresar.insert(a,tupla)
+	if entro_al_ranking:
+		print("ingreso al ranking")
+		input("presione enter...")
+	else:
+		print("no ingreso al ranking")
 
 
 	return lista_en_donde_ingresar
