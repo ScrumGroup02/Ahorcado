@@ -146,7 +146,7 @@ def hangman(Intentos, incognitaGuion):
 		print("▓     /        \ ")
 		print("▓   / |        | \ ")
 		print("▓  / /|        |\ \ ")
-		print("▓  \ \|________|/ /	 YOU DIE!!!")
+		print("▓  \ \|________|/ /	           ")
 		print("▓     |        |")
 		print("▓     |    |   |")
 		print("▓     |____|___|")
@@ -157,7 +157,7 @@ def hangman(Intentos, incognitaGuion):
 		print("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄",ImprimirEspaciado.ImprimirEspaciado(incognitaGuion))
 		
 		
-		elif Intentos == 1:
+	elif Intentos == 1:
 		print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄","\tIntentos restantes: ", Intentos)
 		print("▓         █ ")
 		print("▓     |^^^^^^^|")
@@ -172,7 +172,7 @@ def hangman(Intentos, incognitaGuion):
 		print("▓     /        \ ")
 		print("▓   / |        | \ ")
 		print("▓  / /|        |\ \ ")
-		print("▓  \ \|________|/ /	 YOU DIE!!!")
+		print("▓  \ \|________|/ /	 ")
 		print("▓     |        |")
 		print("▓     |    |   |")
 		print("▓     |____|___|")
@@ -183,7 +183,7 @@ def hangman(Intentos, incognitaGuion):
 		print("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄",ImprimirEspaciado.ImprimirEspaciado(incognitaGuion))
 		
 
-		elif Intentos == 0:
+	elif Intentos == 0:
 		print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄","\tIntentos restantes: ", Intentos)
 		print("▓         █ ")
 		print("▓     |^^^^^^^|")
