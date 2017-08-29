@@ -83,9 +83,12 @@ def verificar_nombre(nombre):
 	nomLongitud = len(nombre)
 
 	if nomLongitud > 4:
+		
 		if nomLongitud < 10:
+			
 			if nombre.isalnum():
-				verificado True
+				
+				verificado = True
 
 
 	#asegurarse que no tenga el simbolo $
