@@ -14,7 +14,7 @@ import Limpiar
 def play():
 
 	jugando = True
-	Intentos = 5
+	Intentos = 7
 
 	jugando= [True,Intentos]
 
