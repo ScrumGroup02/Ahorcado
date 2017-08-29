@@ -52,10 +52,22 @@ Directorio_Rankink_File = './DATA/RANKING'
 
 
 #____________________________________________________-
-#!!!!!!!!!!!!!!!!!!!Falta hacer
+
 #funcion que pedirá el ingreso de un nombre.
 def pedir_ingreso_nombre():
 	#pedir ingresar el nombre por teclado.
+
+	nombreCorrecto = False
+
+	
+	while not nombreCorrecto:
+		#pedir nombre y eso.
+		nombre = input("Ingrese Nombre: ")
+		nombreCorrecto = verificar_nombre(nombre)
+
+		pass
+
+
 
 	return nombre
 #__________________________________________________
@@ -65,8 +77,11 @@ def pedir_ingreso_nombre():
 #!!!!!!!!!!!!!!!!!!!!!!! Falta Hacer
 #funcion para verificar que el nombre cumple los requisitos
 def verificar_nombre(nombre):
+	verificado = True
+
 	#asegurarse que no tenga el simbolo $
 	#max long 9
+
 	return verificado#bool
 #__________________________________________________
 
@@ -181,9 +196,15 @@ def meter_nueva_puntuacion_a_lista(tupla,lista_en_donde_ingresar):
 	print(lista_en_donde_ingresar)
 	for elem in lista_en_donde_ingresar:
 		if elem[1]<tupla[1]:
-			lista_en_donde_ingresar.insert(a,tupla)
+			#si se quiere que
+			#tenga que pasar la puntuacion
+			#del ultimo en el ranking
+			#ingresar en esta parte la tupla
+			#lista_en_donde_ingresar.insert(a,tupla)	
 			break
 		a=a+1
+
+	lista_en_donde_ingresar.insert(a,tupla)
 	print(lista_en_donde_ingresar)
 
 

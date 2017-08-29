@@ -7,7 +7,7 @@ import Hangman
 import MenuPartida
 import time
 import Limpiar
-
+import Ranking
 
 
 
@@ -29,7 +29,23 @@ def play():
 
 	
 	#aca va venir el tema de guardar la puntuacion
-		#pedir nombre y eso.
+		
+	#pedir nombre y eso.
+	
+
+	nombre = Ranking.pedir_ingreso_nombre()
+
+	Puntuacion_a_Guardar = Ranking.crear_tupla_nombre_puntos(nombre,puntuacion)
+
+	listaPuntos_aGuardar = Ranking.meter_nueva_puntuacion_a_lista(Puntuacion_a_Guardar, Ranking.CargarRanking())
+
+	Ranking.GuardarRanking(listaPuntos_aGuardar)
+
+	#
+	
+
+	
+		
 
 
 		
