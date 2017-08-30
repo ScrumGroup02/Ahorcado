@@ -14,6 +14,7 @@ import Limpiar
 import time 
 import os
 import Ranking
+import Beep
 
 
 def imprimir_menu():
@@ -60,11 +61,13 @@ def MenuPrincipal():
 
 	opcion=input("")
 
+	Beep.Beep()
 
 	while (opcion !='1' and opcion != '2' and opcion != '3'):
 		print("==>Por Favor eliga opción 1 o 2<==")
 		
 		opcion=input("")
+		Beep.Beep()
 	
 
 	Limpiar.Limpiar()

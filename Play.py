@@ -76,7 +76,7 @@ def playMatch(Intentos,listapalabras,palaacer,puntos):#Cada playmach es una pala
 		if not Perdio:
 
 
-			letraMenu = MenuPartida.MenuPartida(palaacer)
+			letraMenu = MenuPartida.MenuPartida(palaacer,incognitaSolucion,incognitaGuion)
 			
 			if letraMenu[0]:
 				letra = letraMenu[1]

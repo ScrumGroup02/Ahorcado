@@ -2,6 +2,7 @@
 import PedirLetra
 import Limpiar
 import DarIncongnita
+import pista_letra
 
 def imprimir(listapala):
 	# print("")
@@ -32,28 +33,28 @@ def humillar():
 	print("\t╚ ╝")
 
 
+def MenuPartida(palaacer,incognitaSolucion,incognitaGuion):
 
-def MenuPartida(palalist):
-
-	imprimir(palalist)
-
+	imprimir(palaacer)
 	
 	opcion=input("")
 
-	while (opcion !='1' and opcion != '2'):
-		imprimir(palalist)
+	while (opcion !='1' and opcion != '2' and opcion != '3'):
+		imprimir()
 		opcion=input("")
 	
-	print()
+	Limpiar.Limpiar()
 
 	if (opcion=='1'):
 		letra = PedirLetra.PedirLetra()
 		return[True, letra]
 
-
 	elif (opcion=='2'):
 		humillar()
 		return[False]
-
-
+	
+	elif (opcion=='3'):
+		letra = pista_letra.pista_letra(incognitaSolucion,incognitaGuion)
+		return [True,letra]
+	
 	print("...")
