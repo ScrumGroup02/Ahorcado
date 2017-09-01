@@ -68,7 +68,9 @@ def playMatch(Intentos,listapalabras,palaacer,puntos):#Cada playmach es una pala
 		print("puntos: ", puntos) 
 		Hangman.hangman(Intentos, incognitaGuion)
 		print("")
-		print("Letras Incorrectas: ", lista1)
+		print("═══════Letras Incorrectas══════════════════════════════════════════")
+		print(" ", lista1[0:7])
+		print("═══════════════════════════════════════════════════════════════════")
 		
 				
 
