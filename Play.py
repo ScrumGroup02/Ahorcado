@@ -60,13 +60,15 @@ def playMatch(Intentos,listapalabras,palaacer,puntos):#Cada playmach es una pala
 	Gano = False
 	Perdio = False
 	Intentos = Intentos
-
+	lista1 = []
 	while not(Gano) and not(Perdio):
 
 		Limpiar.Limpiar()
 		
 		print("puntos: ", puntos) 
 		Hangman.hangman(Intentos, incognitaGuion)
+		print("")
+		print("Letras Incorrectas: ", lista1)
 		
 				
 
@@ -86,6 +88,7 @@ def playMatch(Intentos,listapalabras,palaacer,puntos):#Cada playmach es una pala
 					incognitaGuion = MeterLetra.MeterLetra(incognitaGuion,letra, Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
 				else:
 					Intentos = Intentos-1
+					lista1.append(letra)
 
 				print("")
 				
