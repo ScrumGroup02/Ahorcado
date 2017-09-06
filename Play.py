@@ -82,12 +82,17 @@ def playMatch(Intentos,listapalabras,palaacer,puntos):#Cada playmach es una pala
 
 			letraMenu = MenuPartida.MenuPartida(palaacer,incognitaSolucion,incognitaGuion)
 			
-			if letraMenu[0]:
-				letra = letraMenu[1]
 
+			#Si ingreso la letra
+			if letraMenu[0]=='1':
+				letra = letraMenu[1]	
+				
+				#si esta bien la letra se agrega
 				if Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion):
 				
 					incognitaGuion = MeterLetra.MeterLetra(incognitaGuion,letra, Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
+				
+				#Si esta mal se resta el intento y agrega en el historial de fallo la letra
 				else:
 					Intentos = Intentos-1
 					lista1.append(letra)
@@ -96,14 +101,23 @@ def playMatch(Intentos,listapalabras,palaacer,puntos):#Cada playmach es una pala
 				
 
 			
-				if incognitaGuion.count("_")==0:
-					Gano = True
-					
+				
+			
+
+			#Si pidio pista
+			elif letraMenu[0]=='2':
+				letra = letraMenu[1]
+				incognitaGuion = MeterLetra.MeterLetra(incognitaGuion,letra, Control_LetraEnPalabra.Control_LetraEnPalabra(letra,incognitaSolucion))
+				Intentos = Intentos-1
 
 
-
+			#Si se ridió
 			else:
 				Perdio=True
+
+		#Si no hay mas guiones es por que gano
+		if incognitaGuion.count("_")==0:
+					Gano = True
 
 			
 			

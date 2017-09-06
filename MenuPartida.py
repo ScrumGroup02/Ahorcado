@@ -48,14 +48,20 @@ def MenuPartida(palaacer,incognitaSolucion,incognitaGuion):
 
 	if (opcion=='1'):
 		letra = PedirLetra.PedirLetra()
-		return[True, letra]
+		return[opcion, letra]
 
-	elif (opcion=='3'):
-		humillar()
-		return[False]
 	
 	elif (opcion=='2'):
 		letra = pista_letra.pista_letra(incognitaSolucion,incognitaGuion)
-		return [True,letra]
+		return [opcion,letra]
 	
+	elif (opcion=='3'):
+		humillar()
+		return[opcion]
+	
+
+
+
+
+
 	print("...")
