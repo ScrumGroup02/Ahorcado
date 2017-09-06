@@ -108,7 +108,7 @@ def playMatch(Intentos,listapalabras,palaacer,puntos):#Cada playmach es una pala
 			
 			
 
-	time.sleep(1)
+	
 
 
 
@@ -117,6 +117,8 @@ def playMatch(Intentos,listapalabras,palaacer,puntos):#Cada playmach es una pala
 
 
 	if Gano:
+		Hangman.hangman(Intentos, incognitaGuion)
+		time.sleep(1)
 		palaacer.append(incognitaSolucion)
 		mensaje_gano()
 		input()
