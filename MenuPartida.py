@@ -20,7 +20,8 @@ def imprimir(listapala):
 	print("")
 	print("Elegir opción")
 	print("1-Decir Letra")
-	print("2-Rendirse")
+	print("2-Pista")
+	print("3-Rendirse")
 
 def humillar():
 	print("------------------------------------------")
@@ -49,11 +50,11 @@ def MenuPartida(palaacer,incognitaSolucion,incognitaGuion):
 		letra = PedirLetra.PedirLetra()
 		return[True, letra]
 
-	elif (opcion=='2'):
+	elif (opcion=='3'):
 		humillar()
 		return[False]
 	
-	elif (opcion=='3'):
+	elif (opcion=='2'):
 		letra = pista_letra.pista_letra(incognitaSolucion,incognitaGuion)
 		return [True,letra]
 	
