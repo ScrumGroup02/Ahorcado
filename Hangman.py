@@ -5,7 +5,7 @@ import ImprimirEspaciado
 
 def hangman(Intentos, incognitaGuion):
 	
-	if Intentos == 5:
+	if Intentos == 7:
 		print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄","\tIntentos restantes: ", Intentos)
 		print("▓  ")
 		print("▓  ")
@@ -31,7 +31,7 @@ def hangman(Intentos, incognitaGuion):
 		print("▓")
 		print("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄",ImprimirEspaciado.ImprimirEspaciado(incognitaGuion))
 		
-	elif Intentos == 4:
+	elif Intentos == 6:
 		print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄","\tIntentos restantes: ", Intentos)
 		print("▓       █ ")
 		print("▓   |^^^^^^^|")
@@ -56,7 +56,7 @@ def hangman(Intentos, incognitaGuion):
 		print("▓")
 		print("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄",ImprimirEspaciado.ImprimirEspaciado(incognitaGuion))
 		
-	elif Intentos == 3:
+	elif Intentos == 5:
 		print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄","\tIntentos restantes: ", Intentos)
 		print("▓       █ ")
 		print("▓   |^^^^^^^|")
@@ -81,7 +81,7 @@ def hangman(Intentos, incognitaGuion):
 		print("▓")
 		print("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄",ImprimirEspaciado.ImprimirEspaciado(incognitaGuion))
 		
-	elif Intentos == 2:
+	elif Intentos == 4:
 		print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄","\tIntentos restantes: ", Intentos)
 		print("▓         █ ")
 		print("▓     |^^^^^^^|")
@@ -106,7 +106,7 @@ def hangman(Intentos, incognitaGuion):
 		print("▓")
 		print("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄",ImprimirEspaciado.ImprimirEspaciado(incognitaGuion))
 		
-	elif Intentos == 1:
+	elif Intentos == 3:
 		print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄","\tIntentos restantes: ", Intentos)
 		print("▓         █ ")
 		print("▓     |^^^^^^^|")
@@ -131,6 +131,58 @@ def hangman(Intentos, incognitaGuion):
 		print("▓")
 		print("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄",ImprimirEspaciado.ImprimirEspaciado(incognitaGuion))
 		
+	elif Intentos == 2:
+		print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄","\tIntentos restantes: ", Intentos)
+		print("▓         █ ")
+		print("▓     |^^^^^^^|")
+		print("▓     |       | ")
+		print("▓     |__   __| ")	
+		print("▓     ( .\ (. )")	
+		print("▓    @   (_) @")		
+		print("▓     /       \ ")						
+		print("▓     \`-----'' ")
+		print("▓      \ \___/ ")
+		print("▓      _ |__| _ ")
+		print("▓     /        \ ")
+		print("▓   / |        | \ ")
+		print("▓  / /|        |\ \ ")
+		print("▓  \ \|________|/ /	           ")
+		print("▓     |        |")
+		print("▓     |    |   |")
+		print("▓     |____|___|")
+		print("▓              ")
+		print("▓                ")		
+		print("▓                 ")
+		print("▓")
+		print("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄",ImprimirEspaciado.ImprimirEspaciado(incognitaGuion))
+		
+		
+	elif Intentos == 1:
+		print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄","\tIntentos restantes: ", Intentos)
+		print("▓         █ ")
+		print("▓     |^^^^^^^|")
+		print("▓     |       | ")
+		print("▓     |__   __| ")	
+		print("▓     ( .\ (. )")	
+		print("▓    @   (_) @")		
+		print("▓     /       \ ")						
+		print("▓     \`-----'' ")
+		print("▓      \ \___/ ")
+		print("▓      _ |__| _ ")
+		print("▓     /        \ ")
+		print("▓   / |        | \ ")
+		print("▓  / /|        |\ \ ")
+		print("▓  \ \|________|/ /	 ")
+		print("▓     |        |")
+		print("▓     |    |   |")
+		print("▓     |____|___|")
+		print("▓           | |")
+		print("▓           |_|_ ")		
+		print("▓           |___) ")
+		print("▓")
+		print("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄",ImprimirEspaciado.ImprimirEspaciado(incognitaGuion))
+		
+
 	elif Intentos == 0:
 		print("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄","\tIntentos restantes: ", Intentos)
 		print("▓         █ ")

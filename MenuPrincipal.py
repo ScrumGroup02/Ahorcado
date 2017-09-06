@@ -13,11 +13,16 @@ import Play
 import Limpiar
 import time 
 import os
+import Ranking
+import Beep
+
+
 def imprimir_menu():
 
 	print("╔══════════════════════════════╗")
 	print("║          1-Jugar             ║")
-	print("║          2-Salir             ║")
+	print("║          2-Ranking           ║")
+	print("║          3-Salir             ║")
 	print("╚══════════════════════════════╝")
 	if(os.name=="nt"):
 		os.system('color 3')
@@ -56,11 +61,13 @@ def MenuPrincipal():
 
 	opcion=input("")
 
+	Beep.Beep()
 
-	while (opcion !='1' and opcion != '2'):
+	while (opcion !='1' and opcion != '2' and opcion != '3'):
 		print("==>Por Favor eliga opción 1 o 2<==")
 		
 		opcion=input("")
+		Beep.Beep()
 	
 
 	Limpiar.Limpiar()
@@ -72,6 +79,12 @@ def MenuPrincipal():
 		return True
 
 	elif (opcion=='2'):
+		Limpiar.Limpiar()
+		Ranking.ImprimirRanking()
+		input("presione enter para volver...")
+		return True
+
+	elif (opcion=='3'):
 		despedir()
 		return False
 		

@@ -1,12 +1,27 @@
 
 import PedirLetra
 import Limpiar
+import DarIncongnita
+import pista_letra
 
-def imprimir():
+def imprimir(listapala):
+	# print("")
+	# print("╔═══════Palabras Acertadas═══════╗")
+	# print("║",listapala,"                ║")
+	# print("╚════════════════════════════════╝")
+	print("")
+	print("═══════Palabras Acertadas══════════════════════════════════════════")
+	# print(listapala)
+	print(listapala[0:5])
+	print(listapala[5:10])
+	print(listapala[10:15])
+	print(listapala[15:20])
+	print("═══════════════════════════════════════════════════════════════════")
 	print("")
 	print("Elegir opción")
 	print("1-Decir Letra")
-	print("2-Rendirse")
+	print("2-Pista")
+	print("3-Rendirse")
 
 def humillar():
 	print("------------------------------------------")
@@ -19,15 +34,13 @@ def humillar():
 	print("\t╚ ╝")
 
 
+def MenuPartida(palaacer,incognitaSolucion,incognitaGuion):
 
-def MenuPartida():
-
-	imprimir()
-
+	imprimir(palaacer)
 	
 	opcion=input("")
 
-	while (opcion !='1' and opcion != '2'):
+	while (opcion !='1' and opcion != '2' and opcion != '3'):
 		imprimir()
 		opcion=input("")
 	
@@ -37,10 +50,12 @@ def MenuPartida():
 		letra = PedirLetra.PedirLetra()
 		return[True, letra]
 
-
-	elif (opcion=='2'):
+	elif (opcion=='3'):
 		humillar()
 		return[False]
-
-
+	
+	elif (opcion=='2'):
+		letra = pista_letra.pista_letra(incognitaSolucion,incognitaGuion)
+		return [True,letra]
+	
 	print("...")
